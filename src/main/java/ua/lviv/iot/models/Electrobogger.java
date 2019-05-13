@@ -6,6 +6,9 @@ public class Electrobogger extends Tools {
     private String typeOfSupply;
     private String backlighting;
 
+    public Electrobogger() {
+    }
+
     public Electrobogger(final MaterialType materials,
                          final DriveType kindOfDrive,
                          final double length, final double maximumSpeed,
@@ -39,4 +42,6 @@ public class Electrobogger extends Tools {
     public final void setBacklighting(final String backlighting) {
         this.backlighting = backlighting;
     }
+
+
 }

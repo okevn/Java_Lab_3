@@ -4,6 +4,9 @@ public class TwoHandedSaw extends Tools {
     private double model;
     private double price;
 
+    public TwoHandedSaw() {
+    }
+
     public TwoHandedSaw(final MaterialType materials,
                         final DriveType kindOfDrive, final double length,
                         final double model, final double price) {
@@ -27,5 +30,4 @@ public class TwoHandedSaw extends Tools {
     public final void setPrice(final double price) {
         this.price = price;
     }
-
 }

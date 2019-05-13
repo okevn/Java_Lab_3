@@ -34,7 +34,7 @@ public class ToolsManagerImpl implements ToolsManager {
     }
 
     @Override
-    public final void sortByLength(
+    public final List<Tools> sortByLength(
             final List<Tools> tools, final boolean reverse) {
         if (reverse) {
             Collections.sort(tools, Comparator.comparing(
@@ -43,6 +43,7 @@ public class ToolsManagerImpl implements ToolsManager {
             Collections.sort(tools, Comparator.comparing(Tools::getLength));
         }
         tools.stream().forEach(System.out::println);
+        return tools;
     }
 
 }

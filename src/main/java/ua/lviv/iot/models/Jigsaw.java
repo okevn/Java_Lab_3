@@ -5,6 +5,9 @@ public class Jigsaw extends Tools {
     private String workingMaterial;
     private double handleWidth;
 
+    public Jigsaw() {
+    }
+
     public Jigsaw(final MaterialType materials, final DriveType kindOfDrive,
                   final double length, final String workingMaterial,
                   final double handleWidth) {
@@ -28,6 +31,4 @@ public class Jigsaw extends Tools {
     public final void setHandleWidth(final double handleWidth) {
         this.handleWidth = handleWidth;
     }
-
-
 }

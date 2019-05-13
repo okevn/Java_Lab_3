@@ -1,0 +1,12 @@
+ua/lviv/iot/models/SpeedType.class
+ua/lviv/iot/models/Tools.class
+ua/lviv/iot/manager/ToolsManagerImpl.class
+ua/lviv/iot/models/TwoHandedSaw.class
+ua/lviv/iot/models/Electrobogger.class
+ua/lviv/iot/models/DriveType.class
+ua/lviv/iot/models/MetalKnife.class
+ua/lviv/iot/models/Jigsaw.class
+ua/lviv/iot/models/MaterialType.class
+ua/lviv/iot/manager/ToolsManager.class
+ua/lviv/iot/models/Chainsaw.class
+ua/lviv/iot/models/HandedSaw.class

@@ -5,6 +5,9 @@ public class Chainsaw extends Tools {
     private SpeedType chainSpeed;
     private double tankVolume;
 
+    public Chainsaw() {
+    }
+
     public Chainsaw(final MaterialType materials, final DriveType kindOfDrive,
                     final double length, final double engineCapacity,
                     final SpeedType chainSpeed, final double tankVolume) {
@@ -37,6 +40,4 @@ public class Chainsaw extends Tools {
     public final void setTankVolume(final double tankVolume) {
         this.tankVolume = tankVolume;
     }
-
-
 }

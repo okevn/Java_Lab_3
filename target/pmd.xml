@@ -2,12 +2,7 @@
 <pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
-    version="6.8.0" timestamp="2019-04-08T12:13:34.648">
-<file name="/Users/admin/Documents/workspace/project3/src/main/java/ua/lviv/iot/manager/Main.java">
-<violation beginline="3" endline="3" begincolumn="1" endcolumn="28" rule="UnusedImports" ruleset="Best Practices" package="ua.lviv.iot.manager" class="Main" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
-Avoid unused imports such as 'ua.lviv.iot.models'
-</violation>
-</file>
+    version="6.8.0" timestamp="2019-05-13T12:56:30.450">
 <file name="/Users/admin/Documents/workspace/project3/src/main/java/ua/lviv/iot/manager/ToolsManagerImpl.java">
 <violation beginline="26" endline="27" begincolumn="49" endcolumn="22" rule="UselessParentheses" ruleset="Code Style" package="ua.lviv.iot.manager" class="ToolsManagerImpl" method="findByMaterial" externalInfoUrl="https://pmd.github.io/pmd-6.8.0/pmd_rules_java_codestyle.html#uselessparentheses" priority="4">
 Useless parentheses.
