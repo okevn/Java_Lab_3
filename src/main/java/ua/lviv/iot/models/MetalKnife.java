@@ -2,29 +2,32 @@ package ua.lviv.iot.models;
 
 public class MetalKnife extends Tools {
 
-	private String guarantee;
-	private double weight;
-	
-	public MetalKnife(MaterialType materials, DriveType kindOfDrive, double length, String guarantee, double weight) {
-		super(materials, kindOfDrive, length);
-		this.guarantee = guarantee;
-		this.weight = weight;
-	}
+    private String guarantee;
+    private double weight;
 
-	public String getGuarantee() {
-		return guarantee;
-	}
+    public MetalKnife(final MaterialType materials, final DriveType kindOfDrive,
+                      final double length,
+                      final String guarantee,
+                      final double weight) {
+        super(materials, kindOfDrive, length);
+        this.guarantee = guarantee;
+        this.weight = weight;
+    }
 
-	public void setGuarantee(String guarantee) {
-		this.guarantee = guarantee;
-	}
+    public final String getGuarantee() {
+        return guarantee;
+    }
 
-	public double getWeight() {
-		return weight;
-	}
+    public final void setGuarantee(final String guarantee) {
+        this.guarantee = guarantee;
+    }
 
-	public void setWeight(double weight) {
-		this.weight = weight;
-	} 
-	
+    public final double getWeight() {
+        return weight;
+    }
+
+    public final void setWeight(final double weight) {
+        this.weight = weight;
+    }
+
 }
