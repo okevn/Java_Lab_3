@@ -37,4 +37,6 @@ public abstract class Tools {
         this.length = length;
     }
 
+    public Tools() {
+    }
 }

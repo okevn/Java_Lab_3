@@ -1,9 +1,13 @@
 package ua.lviv.iot.models;
 
 public class MetalKnife extends Tools {
-
     private String guarantee;
+
     private double weight;
+
+    public MetalKnife() {
+
+    }
 
     public MetalKnife(final MaterialType materials, final DriveType kindOfDrive,
                       final double length,
@@ -29,5 +33,4 @@ public class MetalKnife extends Tools {
     public final void setWeight(final double weight) {
         this.weight = weight;
     }
-
 }

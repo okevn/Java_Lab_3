@@ -3,6 +3,10 @@ package ua.lviv.iot.models;
 public class HandedSaw extends Tools {
     private int prongsPerInch;
 
+    public HandedSaw() {
+
+    }
+
     public HandedSaw(final MaterialType materials, final DriveType kindOfDrive,
                      final double length, final int prongsPerInch) {
         super(materials, kindOfDrive, length);
@@ -16,5 +20,4 @@ public class HandedSaw extends Tools {
     public final void setProngsPerInch(final int prongsPerInch) {
         this.prongsPerInch = prongsPerInch;
     }
-
 }

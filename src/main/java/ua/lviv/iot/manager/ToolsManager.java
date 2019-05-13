@@ -11,5 +11,5 @@ public interface ToolsManager {
 
     List<Tools> findByDrive(DriveType kindOfDrive);
 
-    void sortByLength(List<Tools> tools, boolean reverse);
+    List<Tools> sortByLength(List<Tools> tools, boolean reverse);
 }
