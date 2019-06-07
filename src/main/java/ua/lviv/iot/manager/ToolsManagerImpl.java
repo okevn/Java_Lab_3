@@ -23,14 +23,14 @@ public class ToolsManagerImpl implements ToolsManager {
 
     @Override
     public final List<Tools> findByMaterial(final MaterialType materials) {
-        return tools.stream().filter(tools1 -> (tools1.getMaterials(
-        ) == materials)).collect(Collectors.toList());
+        return tools.stream().filter(tools1 -> tools1.getMaterials(
+        ) == materials).collect(Collectors.toList());
     }
 
     @Override
     public final List<Tools> findByDrive(final DriveType kindOfDrive) {
-        return tools.stream().filter(tools1 -> (tools1.getKindOfDrive(
-        ) == kindOfDrive)).collect(Collectors.toList());
+        return tools.stream().filter(tools1 -> tools1.getKindOfDrive(
+        ) == kindOfDrive).collect(Collectors.toList());
     }
 
     @Override
