@@ -19,6 +19,18 @@ public class Electrobogger extends Tools {
         this.backlighting = backlighting;
     }
 
+    public String getHeaders() {
+        return "maximumSpeed, "
+                + "typeOfSupply, "
+                + "backlighting ,";
+    }
+
+    public String toCSV() {
+        return maximumSpeed + ", "
+                + typeOfSupply + ", "
+                + backlighting;
+    }
+
     public final double getMaximumSpeed() {
         return maximumSpeed;
     }

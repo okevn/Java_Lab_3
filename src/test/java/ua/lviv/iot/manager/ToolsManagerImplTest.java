@@ -8,8 +8,6 @@ import ua.lviv.iot.models.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class ToolsManagerImplTest {
 
     List<Tools> tools = new ArrayList();
@@ -32,7 +30,7 @@ class ToolsManagerImplTest {
 
     @Test
     void findByMaterial() {
-    List<Tools> result = manager.findByMaterial(MaterialType.METAL);
+        List<Tools> result = manager.findByMaterial(MaterialType.METAL);
         Assertions.assertEquals(2, result.size());
 
     }
@@ -45,10 +43,10 @@ class ToolsManagerImplTest {
 
     @Test
     void sortByLength() {
-        List<Tools> result = manager.sortByLength(tools,true);
+        List<Tools> result = manager.sortByLength(tools, true);
         for (int i = 1; i < result.size(); i++) {
             Assertions.assertTrue(result.get(i - 1).getLength() >= result.get(i).getLength());
         }
-        Assertions.assertNotNull(result );
+        Assertions.assertNotNull(result);
     }
 }

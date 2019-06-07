@@ -16,6 +16,17 @@ public class Jigsaw extends Tools {
         this.handleWidth = handleWidth;
     }
 
+
+    public String getHeaders() {
+        return "workingMaterial, "
+                + "handleWidth";
+    }
+
+    public String toCSV() {
+        return workingMaterial + ", "
+                + handleWidth;
+    }
+
     public final String getWorkingMaterial() {
         return workingMaterial;
     }

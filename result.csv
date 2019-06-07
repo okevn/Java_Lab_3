@@ -1,0 +1,8 @@
+engineCapacity ,chainSpeed  ,tankVolume  ,
+70.0           ,LOW         ,70.0
+maximumSpeed   ,typeOfSupply,backlighting,
+20.0           ,electric    ,yes
+workingMaterial,handleWidth
+wood           ,7.0
+guarantee      ,weight
+no             ,4.0
