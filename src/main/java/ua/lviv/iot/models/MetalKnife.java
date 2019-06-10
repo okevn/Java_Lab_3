@@ -18,6 +18,16 @@ public class MetalKnife extends Tools {
         this.weight = weight;
     }
 
+    public String getHeaders() {
+        return "guarantee, "
+                + "weight";
+    }
+
+    public String toCSV() {
+        return guarantee + ", "
+                + weight;
+    }
+
     public final String getGuarantee() {
         return guarantee;
     }

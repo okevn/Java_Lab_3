@@ -1,7 +1,14 @@
 package ua.lviv.iot.models;
 
-public abstract class Tools {
+import javax.persistence.*;
 
+@Entity
+@Inheritance
+public class Tools {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
     private MaterialType materials;
     private DriveType kindOfDrive;
     private double length;
@@ -13,30 +20,50 @@ public abstract class Tools {
         this.length = length;
     }
 
-    public final MaterialType getMaterials() {
+    public Tools() {
+    }
+
+    public String getHeaders() {
+        return "materials, "
+                + "kindOfDrive, "
+                + "length ,";
+    }
+
+    public String toCSV() {
+        return materials + ", "
+                + kindOfDrive + ", "
+                + length;
+    }
+
+    public MaterialType getMaterials() {
         return materials;
     }
 
-    public final void setMaterials(final MaterialType materials) {
+    public void setMaterials(final MaterialType materials) {
         this.materials = materials;
     }
 
-    public final DriveType getKindOfDrive() {
+    public DriveType getKindOfDrive() {
         return kindOfDrive;
     }
 
-    public final void setKindOfDrive(final DriveType kindOfDrive) {
+    public void setKindOfDrive(final DriveType kindOfDrive) {
         this.kindOfDrive = kindOfDrive;
     }
 
-    public final double getLength() {
+    public double getLength() {
         return length;
     }
 
-    public final void setLength(final double length) {
+    public void setLength(final double length) {
         this.length = length;
     }
 
-    public Tools() {
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

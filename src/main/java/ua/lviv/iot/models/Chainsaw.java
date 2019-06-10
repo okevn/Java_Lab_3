@@ -1,6 +1,14 @@
 package ua.lviv.iot.models;
 
+import org.springframework.data.annotation.Id;
+import javax.persistence.*;
+
+@Entity
+@Inheritance
 public class Chainsaw extends Tools {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
     private double engineCapacity;
     private SpeedType chainSpeed;
     private double tankVolume;
@@ -17,27 +25,49 @@ public class Chainsaw extends Tools {
         this.tankVolume = tankVolume;
     }
 
-    public final double getEngineCapacity() {
+    public String getHeaders() {
+        return "engineCapacity, "
+                + "chainSpeed, "
+                + "tankVolume ,";
+    }
+
+    public String toCSV() {
+        return engineCapacity + ", "
+                + chainSpeed + ", "
+                + tankVolume;
+    }
+
+    @Override
+    public Integer getId() {
+        return id;
+    }
+
+    @Override
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public double getEngineCapacity() {
         return engineCapacity;
     }
 
-    public final void setEngineCapacity(final double engineCapacity) {
+    public void setEngineCapacity(double engineCapacity) {
         this.engineCapacity = engineCapacity;
     }
 
-    public final SpeedType getChainSpeed() {
+    public SpeedType getChainSpeed() {
         return chainSpeed;
     }
 
-    public final void setChainSpeed(final SpeedType chainSpeed) {
+    public void setChainSpeed(SpeedType chainSpeed) {
         this.chainSpeed = chainSpeed;
     }
 
-    public final double getTankVolume() {
+    public double getTankVolume() {
         return tankVolume;
     }
 
-    public final void setTankVolume(final double tankVolume) {
+    public void setTankVolume(double tankVolume) {
         this.tankVolume = tankVolume;
     }
 }
